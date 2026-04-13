@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Yantramanav", sans-serif;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.left-container {
+    width: 18%;
+    height: 100vh;
+    background-color: #03A9F5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 25px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.location {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.status {
+    padding: 10px;
+}
+
+.status-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+}
+
+ul li i {
+    font-size: 22px;
+    width: 30px;
+    text-align: center;
+}
+
+ul li:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+ul li.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 4px solid #FFC107;
+}
+
+.settings {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 35px;
+    margin-top: auto;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.right-container {
+    margin-left: 18%;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav {
+    width: 82%;
+    height: 91px;
+    background-color: #0288D1;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 18%;
+    top: 0;
+    z-index: 10;
+    justify-content: space-between;
+}
+
+.dashboard {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.top-content {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    gap: 20px;
+}
+
+.announce {
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 2px rgba(18, 18, 18, 0.1);
+}
+
+.head {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.roles {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #8C8C8C;
+    font-weight: 400;
+}
+
+.notice-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 20px;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 15px;
+    border-left: 6px solid #03A9F5;
+}
+
+.notice-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 15px;
+    border-left: 6px solid #FFC107;
+}
+
+.notice-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 15px;
+    border-left: 6px solid #03A9F5;
+}
+
+.notice-4 {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    padding: 22px;
+    border-left: 6px solid #FFC107;
+}
+
+.views {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #8C8C8C;
+    flex-direction: column;
+}
+
+.calendar {
+    width: 35%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    box-shadow: 0px 0px 0px 2px rgba(18, 18, 18, 0.1);
+}
+
+.cal-add-btn {
+    width: 45px;
+    height: 45px;
+    background-color: #FFC107;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: -25px;
+    right: 70px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cal-grid {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+.cal-grid th {
+    padding: 15px;
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cal-grid td {
+    padding: 8px;
+}
+
+.cal-grid td.today div {
+    background-color: #03A9F5;
+    color: white;
+    font-weight: bold;
+}
+
+.cal-grid td.event-day div {
+    border: 2px solid #ccc;
+}
+
+.cal-grid td.highlight-day div {
+    background-color: #ccc;
+    color:black;
+}
+
+.cal-grid td div {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.bottom-content {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.messages,
+.courses {
+    width: 35%;
+    background-color: white;
+    box-shadow: 0px 0px 0px 2px rgba(18, 18, 18, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+}
+
+.msg-add-btn {
+    width: 45px;
+    height: 45px;
+    background-color: #FFC107;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    top: -25px;
+    right: 70px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+    padding: 15px 20px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    background-color: #03A9F5;
+    color: white;
+}
+
+.profile-1 {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    border-left: 5px solid #EE534E;
+    padding: 15px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-2 {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-1 img,
+.profile-2 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-wrap {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.status-dot.green {
+    background-color: #CDDC39;
+}
+
+.status-dot.orange {
+    background-color: #EE534E;
+}
+
+.add-btn {
+    width: 45px;
+    height: 45px;
+    background-color: #FFC107;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+}
+
+.teacher-1 {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    padding: 15px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    line-height: 28px;
+}
+
+.div1 {
+    width: 60px;
+    height: 45px;
+    background-color: #FFC107;
+}
+
+.div2 {
+    width: 60px;
+    height: 35px;
+    background-color: #26C7DB;
+}
+
+.div3 {
+    width: 60px;
+    height: 25px;
+    background-color: #26c7db;
+}
+
+.div4 {
+    width: 60px;
+    height: 18px;
+    background-color: #EE534F;
+}
+
+.process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.history {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.blue-dot {
+    background-color: #03A9F5;
+}
+
+.yellow-dot {
+    background-color: #FFC107;
+}
+
+.dots {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.blue-dot,
+.yellow-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.line-div {
+    width: 2px;
+    height: 180px;
+    background-color: #ccc;
+    margin-left: 6.5px;
+}
+
+.box1 {
+    width: 100%;
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 0px 0px 2px rgba(18, 18, 18, 0.1);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.left {
+    width: 50px;
+    color: white;
+    background-color: #03A9F5;
+}
+
+.topics {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.topic-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    /* padding: 20px; */
+    box-shadow: 0px 0px 0px 2px rgba(18, 18, 18, 0.1);
+    line-height: 30px;
+}
+
+.topic-group {
+    background-color: white;
+    box-shadow: 0px 0px 0px 2px rgba(18, 18, 18, 0.1);
+    overflow: hidden;
+}
+
+.topic-group .topic-card {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.topic-date {
+    min-width: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+    flex-shrink: 0;
+}
+
+.topic-date.blue-bg {
+    background-color: #03A9F5;
+}
+
+.topic-date.yellow-bg {
+    background-color: #FFC107;
+}
