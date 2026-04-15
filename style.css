@@ -171,6 +171,12 @@ ul li.active {
     font-size: 25px;
 }
 
+.power {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+}
+
 .right-container {
     margin-left: 18%;
     width: 82%;
@@ -316,6 +322,7 @@ ul li.active {
     border-left: 6px solid #FFC107;
 }
 
+
 .views {
     display: flex;
     gap: 10px;
@@ -379,7 +386,7 @@ ul li.active {
 }
 
 .cal-grid td.event-day div {
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 .cal-grid td.highlight-day div {
@@ -564,14 +571,24 @@ ul li.active {
 }
 
 .blue-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
     background-color: #03A9F5;
+    margin-top: 30px;
 }
 
 .yellow-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
     background-color: #FFC107;
 }
 
-.green-dot{
+.green-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
     background-color: #24C5DB;
 }
 
@@ -581,16 +598,16 @@ ul li.active {
     padding-top: 60px;
 }
 
-.blue-dot,
-.yellow-dot,.green-dot {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+.line-div {
+    width: 1.2px;
+    height: 115px;
+    background-color: #ccc;
+    margin-left: 6.5px;
 }
 
-.line-div {
-    width: 2px;
-    height: 180px;
+.line-div1 {
+    width: 1.2px;
+    height: 185px;
     background-color: #ccc;
     margin-left: 6.5px;
 }
