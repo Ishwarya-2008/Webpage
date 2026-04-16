@@ -698,6 +698,13 @@ ul li.active {
         width: 6%;
     }
 
+    .left-container.hidden .menu ul {
+        padding-top: 100%;
+    }
+    .left-container.hidden ul li img{
+        width:30px;
+        height: 30px;
+    }
     .right-container {
         margin-left: 18%;
         width: 82%;
