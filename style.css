@@ -700,6 +700,9 @@ ul li.active {
         width: 18%;
         overflow: auto;
         scrollbar-width: none;
+        position: fixed;
+        left: 0;
+        top: 0;
     }
 
     .left-container.hidden {
@@ -986,6 +989,9 @@ ul li.active {
     .left-container {
         width: 18%;
         gap: 8px;
+        position: fixed;
+        left: 0;
+        top: 0;
     }
 
     .right-container {
