@@ -21,7 +21,7 @@ body {
 }
 
 .left-container {
-    width: 18%;
+    width: 340px;
     height: 100vh;
     background-color: #03A9F5;
     display: flex;
@@ -40,7 +40,7 @@ body {
 }
 
 .left-container.hidden {
-    width: 6%;
+    width: 115px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -58,6 +58,10 @@ body {
     display: none;
 }
 
+.left-container.hidden .menu ul li div{
+    padding: 15px;
+}
+
 .left-container.hidden .menu {
     width: 100%;
     justify-content: flex-start;
@@ -66,27 +70,103 @@ body {
 .left-container.hidden .menu ul {
     flex-direction: column;
     gap: 15px;
+    align-items: center;
+}
+.left-container.hidden .menu ul li {
+    width: 100%;
+    padding: 15px 20px;
+    justify-content: center;
 }
 
 .left-container.hidden .menu ul li span {
     display: none;
 }
 
+.left-container.hidden .menu ul li.active{
+    width: 100%;
+    padding: 15px 20px;
+    justify-content: center;
+}
 .left-container.hidden .settings {
     flex-wrap: wrap;
 }
 
-.left-container.hidden .sidebar-toggle {
+.left-container.hidden .sidebar-toggle-1 {
     justify-content: center;
     padding: 15px 0;
 }
 
-.sidebar-toggle {
-    width: 100%;
+#profile-img {
+    background: url('images/sprite\ \(1\).png') no-repeat 0 0;
+    width: 72px;
+    height: 72px;
+}
+
+#home {
+    background: url('images/sprite\ \(1\).png') no-repeat -441px -64px;
+    width: 28px;
+    height: 26px;
+}
+
+#calendar {
+    background: url('images/sprite (1).png') no-repeat -406px -61px;
+    width: 27px;
+    height: 30px;
+}
+
+#announce {
+    background: url('images/sprite (1).png') no-repeat -373px -64px;
+    width: 29px;
+    height: 27px;
+}
+
+#courses {
+    background: url('images/sprite (1).png') no-repeat -340px -63px;
+    width: 25px;
+    height: 28px;
+}
+
+#messages {
+    background: url('images/sprite (1).png') no-repeat -298px -63px;
+    width: 28px;
+    height: 24px;
+}
+
+#forum {
+    background: url('images/sprite (1).png') no-repeat -253px -59px;
+    width: 28px;
+    height: 28px;
+}
+
+.gear {
+    background: url('images/sprite (1).png') no-repeat -212px -57px;
+    width: 28px;
+    height: 31px;
+}
+
+.sidebar {
     display: flex;
-    justify-content: flex-end;
-    padding: 15px 20px;
-    color: white;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.sidebar-toggle {
+    background: url('images/sprite (1).png') no-repeat -132px -53px;
+    width: 26px;
+    height: 20px;
+}
+
+.sidebar-toggle-1 {
+    font-size: 25px;
+    display: none;
+}
+
+.sidebar-toggle:hover {
+    cursor: pointer;
+}
+
+.sidebar-toggle-1{
     cursor: pointer;
 }
 
@@ -110,6 +190,18 @@ body {
     gap: 10px;
     align-items: center;
     text-align: center;
+}
+
+.loc {
+    background: url('images/sprite (1).png') no-repeat -112px -54px;
+    width: 15px;
+    height: 18px;
+}
+
+.eye {
+    background: url('images/sprite (1).png') no-repeat -85px -55px;
+    width: 22px;
+    height: 17px;
 }
 
 .status {
@@ -157,10 +249,6 @@ ul li i {
     text-align: center;
 }
 
-ul li:hover {
-    background-color: #0288D1;
-}
-
 ul li.active {
     background-color: #0288D1;
     border-left: 4px solid #FFC107;
@@ -177,14 +265,14 @@ ul li.active {
 }
 
 .power {
-    display: flex;
-    gap: 2px;
-    flex-direction: column;
+    background: url('images/sprite (1).png') no-repeat -174px -53px;
+    width: 25px;
+    height: 32px;
 }
 
 .right-container {
-    margin-left: 18%;
-    width: 82%;
+    margin-left: 340px;
+    width: calc(100% - 340px);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -192,20 +280,20 @@ ul li.active {
 }
 
 .right-container.full-width {
-    margin-left: 6%;
-    width: 94%;
+    margin-left: 115px;
+    width: calc(100% - 115px);
 }
 
 .nav {
-    width: 82%;
-    height: 91px;
+    width: calc(100% - 340px);
+    height: 90px;
     background-color: #0288D1;
     display: flex;
     align-items: center;
     padding: 0 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
-    left: 18%;
+    left: 340px;
     top: 0;
     z-index: 10;
     justify-content: space-between;
@@ -234,12 +322,9 @@ ul li.active {
 }
 
 .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    color: white;
+    background: url('images/sprite (1).png') no-repeat -79px 0;
+    width: 120px;
+    height: 43px;
 }
 
 .logo img {
@@ -291,6 +376,31 @@ ul li.active {
     font-weight: 400;
 }
 
+.role-principal,
+.role-teacher {
+    position: relative;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.role-principal::before,
+.role-teacher::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+}
+
+.role-principal::before {
+    background-color: #03A9F5;
+}
+
+.role-teacher::before {
+    background-color: #FDC207;
+}
+
 .notice-1 {
     display: flex;
     flex-direction: row;
@@ -330,7 +440,6 @@ ul li.active {
 
 .views {
     display: flex;
-    gap: 10px;
     align-items: center;
     color: #8C8C8C;
     flex-direction: column;
@@ -350,20 +459,13 @@ ul li.active {
 }
 
 .cal-add-btn {
-    width: 45px;
-    height: 45px;
-    background-color: #FFC107;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
+    background: url('images/sprite (1).png') no-repeat -211px 0;
+    width: 37px;
+    height: 39px;
     position: absolute;
-    top: -25px;
-    right: 70px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    top: -20px;
+    right: 30px;
+    cursor: pointer;
 }
 
 .cal-grid {
@@ -475,12 +577,28 @@ ul li.active {
     border-bottom: 1px solid #eee;
 }
 
-.profile-1 img,
-.profile-2 img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+.man-1 {
+    background: url('images/sprite (1).png') no-repeat -419px -2px;
+    width: 47px;
+    height: 44px;
+}
+
+.man-2 {
+    background: url('images/sprite (1).png') no-repeat -364px -1px;
+    width: 47px;
+    height: 45px;
+}
+
+.man-3 {
+    background: url('images/sprite (1).png') no-repeat -312px -1px;
+    width: 45px;
+    height: 44px;
+}
+
+.man-4 {
+    background: url('images/sprite (1).png') no-repeat -260px 0;
+    width: 44px;
+    height: 45px;
 }
 
 .avatar-wrap {
@@ -507,21 +625,12 @@ ul li.active {
 }
 
 .add-btn {
-    width: 45px;
-    height: 45px;
-    background-color: #FFC107;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
+    background: url('images/sprite (1).png') no-repeat -474px -3px;
+    width: 37px;
+    height: 39px;
     position: absolute;
-    top: 70px;
-    right: 50px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    z-index: 5;
+    top: 80px;
+    left: 400px;
 }
 
 .teacher-1 {
@@ -696,7 +805,7 @@ ul li.active {
 
 @media (max-width: 1680px) {
     .left-container {
-        width: 18%;
+        width: 340px;
         overflow: auto;
         scrollbar-width: none;
         position: fixed;
@@ -705,7 +814,7 @@ ul li.active {
     }
 
     .left-container.hidden {
-        width: 6%;
+        width: 115px;
         padding-top: 20px;
         position: fixed;
         left: 0;
@@ -718,18 +827,18 @@ ul li.active {
     }
 
     .right-container {
-        margin-left: 18%;
-        width: 82%;
+        margin-left: 340px;
+        width: calc(100% - 340px);
     }
 
     .right-container.full-width {
-        margin-left: 6%;
-        width: 94%;
+        margin-left: 115px;
+        width: calc(100% - 115px);
     }
 
     .right-container.full-width .nav {
-        left: 6%;
-        width: 94%;
+        left: 115px;
+        width: calc(100% - 115px);
     }
 
     .content {
@@ -776,27 +885,32 @@ ul li.active {
 
 @media (max-width: 1440px) {
     .left-container {
-        width: 22%;
+        width: 340px;
         gap: 10px;
         position: fixed;
         left: 0;
         top: 0;
     }
 
+    .right-container.full-width {
+        margin-left: 115px;
+        width: calc(100% - 115px);
+    }
+
     .right-container {
-        margin-left: 22%;
-        width: 78%;
+        margin-left: 340px;
+        width: calc(100% - 340px);
     }
 
     .nav {
-        width: 78%;
-        left: 22%;
+        width: calc(100% - 340px);
+        left: 340px;
         height: 80px;
     }
 
     .right-container.full-width .nav {
-        left: 6%;
-        width: 94%;
+        left: 115px;
+        width: calc(100% - 115px);
     }
 
     .profile {
@@ -986,7 +1100,7 @@ ul li.active {
 
 @media (max-width: 1280px) {
     .left-container {
-        width: 18%;
+        width: 340px;
         gap: 8px;
         position: fixed;
         left: 0;
@@ -994,14 +1108,24 @@ ul li.active {
     }
 
     .right-container {
-        margin-left: 18%;
-        width: 82%;
+        margin-left: 340px;
+        width: calc(100% - 340px);
     }
 
     .nav {
-        width: 82%;
-        left: 18%;
+        width: calc(100% - 340px);
+        left: 340px;
         height: 70px;
+    }
+
+    .right-container.full-width {
+        margin-left: 115px;
+        width: calc(100% - 115px);
+    }
+
+    .right-container.full-width .nav {
+        left: 115px;
+        width: calc(100% - 115px);
     }
 
     .profile img {
@@ -1105,21 +1229,31 @@ ul li.active {
 
 @media (min-width: 1920px) {
     .left-container {
-        width: 18%;
+        width: 340px;
         position: fixed;
         left: 0;
         top: 0;
     }
 
     .right-container {
-        margin-left: 18%;
-        width: 82%;
+        margin-left: 340px;
+        width: calc(100% - 340px);
     }
 
     .nav {
-        width: 82%;
-        left: 18%;
+        width: calc(100% - 340px);
+        left: 340px;
         height: 95px;
+    }
+
+    .right-container.full-width {
+        margin-left: 115px;
+        width: calc(100% - 115px);
+    }
+
+    .right-container.full-width .nav {
+        left: 115px;
+        width: calc(100% - 115px);
     }
 
     .content {
@@ -1166,21 +1300,31 @@ ul li.active {
 
 @media (min-width: 2560px) {
     .left-container {
-        width: 18%;
+        width: 340px;
         position: fixed;
         left: 0;
         top: 0;
     }
 
     .right-container {
-        margin-left: 18%;
-        width: 82%;
+        margin-left: 340px;
+        width: calc(100% - 340px);
     }
 
     .nav {
-        width: 82%;
-        left: 18%;
+        width: calc(100% - 340px);
+        left: 340px;
         height: 100px;
+    }
+
+    .right-container.full-width {
+        margin-left: 115px;
+        width: calc(100% - 115px);
+    }
+
+    .right-container.full-width .nav {
+        left: 115px;
+        width: calc(100% - 115px);
     }
 
     .content {
@@ -1297,11 +1441,29 @@ ul li.active {
 
 @media (max-width:425px) {
     .left-container {
-        width: 10%;
+        width: 340px;
         align-items: center;
         position: fixed;
         left: 0;
         top: 0;
+    }
+
+    .right-container.full-width {
+        margin-left: 115px;
+        width: calc(100% - 115px);
+    }
+
+    .right-container.full-width .nav {
+        left: 115px;
+        width: calc(100% - 115px);
+    }
+
+    .left-container.hidden {
+        width: 100px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     .profile {
@@ -1323,19 +1485,19 @@ ul li.active {
     }
 
     .right-container {
-        margin-left: 10%;
-        width: 90%;
+        margin-left: 340px;
+        width: calc(100% - 340px);
     }
 
     .nav {
-        width: 90%;
-        left: 10%;
+        width: calc(100% - 340px);
+        left: 340px;
     }
 
-    .nav .dashboard{
+    .nav .dashboard {
         display: none;
     }
-    
+
     .content {
         margin-top: 80px;
         padding: 20px;
@@ -1369,7 +1531,7 @@ ul li.active {
 
 @media (min-width: 426px) and (max-width:728px) {
     .left-container {
-        width: 12%;
+        width: 340px;
         align-items: center;
         position: fixed;
         left: 0;
@@ -1381,8 +1543,18 @@ ul li.active {
     }
 
     .right-container {
-        margin-left: 12%;
-        width: 88%;
+        margin-left: 340px;
+        width: calc(100% - 340px);
+    }
+
+    .right-container.full-width {
+        margin-left: 115px;
+        width: calc(100% - 115px);
+    }
+
+    .right-container.full-width .nav {
+        left: 115px;
+        width: calc(100% - 115px);
     }
 
     .messages,

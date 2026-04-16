@@ -15,14 +15,14 @@
 <body>
     <section class="main">
         <div class="left-container">
-            <div class="sidebar-toggle">
-                <i class="fa-solid fa-bars" style="font-size: 28px;"></i>
+            <div class="sidebar-toggle-1">
+                <i class="fa-solid fa-bars"></i>
             </div>
             <div class="profile">
-                <img src="images/image.png" alt="profile">
+                <div id="profile-img"></div>
                 <p style="font-size: 35px; margin-top: 10px;font-weight: 350;">Alex Shaw</p>
                 <div class="location">
-                    <i class="fa-solid fa-location-dot" style="color: #B3E5FC;"></i>
+                    <div class="loc"></div>
                     <p style="color: #B3E5FC;font-size: 17px;">Ho Chi Minh City, Vietnam</p>
                 </div>
                 <div class="status">
@@ -32,48 +32,43 @@
             <div class="menu">
                 <ul>
                     <li class="active">
-                        <img src="images/home.png" alt="home">
+                        <div id="home"></div>
                         <span style="font-size: 25px;">Dashboard</span>
                     </li>
                     <li>
-                        <img src="images/calendar.png" alt="calendar">
+                        <div id="calendar"></div>
                         <span style="font-size: 25px;">Calendar</span>
                     </li>
                     <li>
-                        <img src="images/announce.png" alt="announcement">
+                        <div id="announce"></div>
                         <span style="font-size: 25px;">Announcement</span>
                     </li>
                     <li>
-                        <img src="images/courses.png" alt="courses">
+                        <div id="courses"></div>
                         <span style="font-size: 25px;">Courses</span>
                     </li>
                     <li>
-                        <img src="images/messages.png" alt="messages">
+                        <div id="messages"></div>
                         <span style="font-size: 25px;">Messages</span>
                     </li>
                     <li>
-                        <img src="images/forum.png" alt="forum">
+                        <div id="forum"></div>
                         <span style="font-size: 25px;">Forum</span>
                     </li>
                 </ul>
             </div>
             <div class="settings">
-                <div>
-                    <i class="fa-solid fa-gear"></i>
-                </div>
-                <div class="power">
-                    <i class="fa-solid fa-power-off"></i>
-                    <i class="fa-solid fa-ellipsis"></i>
-                </div>
+                <div class="gear"></div>
+                <div class="power"></div>
             </div>
         </div>
         <div class="right-container">
             <section class="nav">
-                <div class="dashboard">Dashboard</div>
-                <div class="logo">
-                    <img src="images/logo.png" alt="logo">
-                    <p style="font-size: 30px;">NEXAPP</p>
+                <div class="sidebar">
+                    <div class="sidebar-toggle"></div>
+                    <div class="dashboard">Dashboard</div>
                 </div>
+                <div class="logo"></div>
             </section>
             <section class="content">
                 <div class="top-content">
@@ -85,17 +80,16 @@
                                     Teachers</h4>
                             </div>
                             <div class="roles">
-                                <div style="border-left: 4px solid #03A9F5;padding-left: 15px; font-size: 20px;">
+                                <div class="role-principal">
                                     Principal</div>
-                                <div style="border-left: 4px solid #FDC207;padding-left: 15px; font-size: 20px;">Teacher
+                                <div class="role-teacher">Teacher
                                 </div>
                             </div>
                         </div>
                         <div class="notice-1">
                             <div class="views">
                                 <h3 style="color: #8c8c8c;">12459</h3>
-
-                                <i class="fa-solid fa-eye" style="color: #8c8c8c;"></i>
+                                <div class="eye"></div>
                             </div>
                             <div>
                                 <h2 style="font-weight: 500;">MERRY CHRISTMAS EVERYONE AND DAYS OFF SCHEDULE</h2>
@@ -106,7 +100,7 @@
                         <div class="notice-2">
                             <div class="views">
                                 <h3 style="color: #8c8c8c;">5362</h3>
-                                <i class="fa-solid fa-eye" style="color: #8c8c8c;"></i>
+                                <div class="eye"></div>
                             </div>
                             <div>
                                 <h2 style="font-weight: 500;">HISTORY OF EARTH ASSIGNMENT DETAILS</h2>
@@ -117,7 +111,7 @@
                         <div class="notice-3">
                             <div class="views">
                                 <h3 style="color: #8c8c8c;">2287</h3>
-                                <i class="fa-solid fa-eye" style="color: #8c8c8c;"></i>
+                                <div class="eye"></div>
                             </div>
                             <div>
                                 <h2 style="font-weight: 500;">INTRODUCTION TO GEOGRAPHY TEST WILL BE TO NOV 27TH </h2>
@@ -128,9 +122,7 @@
                         <div class="notice-4"></div>
                     </div>
                     <div class="calendar">
-                        <div class="cal-add-btn">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
+                        <div class="cal-add-btn"></div>
                         <table class="cal-grid">
                             <thead>
                                 <tr>
@@ -207,9 +199,7 @@
                 </div>
                 <div class="bottom-content">
                     <div class="messages">
-                        <div class="add-btn">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
+                        <div class="add-btn"></div>
                         <div class="heading">
                             <h2 style="font-size: 30px;font-weight: 400;">Messages</h2>
                             <p style="font-size: 20px;color: #B3E5FC;">Current Conversations</p>
@@ -217,7 +207,7 @@
                         <div class="profile-1">
                             <div class="avatar-wrap">
                                 <span class="status-dot green"></span>
-                                <img src="images/man1.png" alt="profile">
+                                <div class="man-1"></div>
                             </div>
                             <div style="line-height: 23px;">
                                 <h2 style="font-weight: 400;">Mr.Sheldon Cooper</h2>
@@ -228,7 +218,7 @@
                         <div class="profile-2">
                             <div class="avatar-wrap">
                                 <span class="status-dot orange"></span>
-                                <img src="images/man2.png" alt="profile">
+                                <div class="man-2"></div>
                             </div>
                             <div style="line-height: 23px;">
                                 <h2 style="font-weight: 400;">Jason Bourne</h2>
@@ -239,7 +229,7 @@
                         <div class="profile-2">
                             <div class="avatar-wrap">
                                 <span class="status-dot green"></span>
-                                <img src="images/man3.png" alt="profile">
+                                <div class="man-3"></div>
                             </div>
                             <div style="line-height: 23px;">
                                 <h2 style="font-weight: 400;">Mr. Barney Stinson</h2>
@@ -250,7 +240,7 @@
                         <div class="profile-2" style="border: none;">
                             <div class="avatar-wrap">
                                 <span class="status-dot green"></span>
-                                <img src="images/man4.png" alt="profile">
+                                <div class="man-4"></div>
                             </div>
                             <div style="line-height: 23px;">
                                 <h2 style="font-weight: 400;">Jesse Pinkman</h2>
@@ -260,9 +250,7 @@
                         </div>
                     </div>
                     <div class="courses">
-                        <div class="add-btn">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
+                        <div class="add-btn"></div>
                         <div class="heading">
                             <h2 style="font-size: 30px;font-weight: 400;">Courses</h2>
                             <p style="font-size: 20px;color: #B3E5FC;">Your Current Courses And Process</p>
