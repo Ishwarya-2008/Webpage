@@ -48,7 +48,7 @@ body {
     text-align: center;
     color: white;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .left-container.hidden .profile {
@@ -701,11 +701,9 @@ ul li.active {
 
     .left-container.hidden {
         width: 6%;
+        padding-top: 20px;
     }
-
-    .left-container.hidden .menu ul {
-        padding-top: 100%;
-    }
+    
     .left-container.hidden ul li img{
         width:30px;
         height: 30px;
