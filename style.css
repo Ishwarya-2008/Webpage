@@ -1105,20 +1105,20 @@ ul li.active {
 
 @media (min-width: 1920px) {
     .left-container {
-        width: 16%;
+        width: 18%;
         position: fixed;
         left: 0;
         top: 0;
     }
 
     .right-container {
-        margin-left: 16%;
-        width: 84%;
+        margin-left: 18%;
+        width: 82%;
     }
 
     .nav {
-        width: 84%;
-        left: 16%;
+        width: 82%;
+        left: 18%;
         height: 95px;
     }
 
@@ -1166,20 +1166,20 @@ ul li.active {
 
 @media (min-width: 2560px) {
     .left-container {
-        width: 14%;
+        width: 18%;
         position: fixed;
         left: 0;
         top: 0;
     }
 
     .right-container {
-        margin-left: 14%;
-        width: 86%;
+        margin-left: 18%;
+        width: 82%;
     }
 
     .nav {
-        width: 86%;
-        left: 14%;
+        width: 82%;
+        left: 18%;
         height: 100px;
     }
 
