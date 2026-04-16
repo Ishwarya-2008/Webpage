@@ -26,7 +26,7 @@ body {
     background-color: #03A9F5;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 17px;
     align-items: center;
     text-align: center;
     color: white;
@@ -221,6 +221,7 @@ ul li.active {
     gap: 20px;
     padding: 20px;
     color: white;
+    font-size: 30px;
 }
 
 .dashboard .fa-bars {
@@ -318,7 +319,7 @@ ul li.active {
     display: flex;
     flex-direction: row;
     gap: 35px;
-    padding: 22px;
+    padding: 40px;
     border-left: 6px solid #FFC107;
 }
 
@@ -687,6 +688,31 @@ ul li.active {
 }
 
 @media (max-width: 1680px) {
+    .left-container {
+        width: 18%;
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    .left-container.hidden {
+        width: 6%;
+    }
+
+    .right-container {
+        margin-left: 18%;
+        width: 82%;
+    }
+
+    .right-container.full-width {
+        margin-left: 6%;
+        width: 94%;
+    }
+
+    .right-container.full-width .nav {
+        left: 6%;
+        width: 94%;
+    }
+
     .content {
         padding: 30px;
         gap: 25px;
@@ -747,8 +773,8 @@ ul li.active {
     }
 
     .right-container.full-width .nav {
-        left: 5%;
-        width: 95%;
+        left: 6%;
+        width: 94%;
     }
 
     .profile {
@@ -938,18 +964,18 @@ ul li.active {
 
 @media (max-width: 1280px) {
     .left-container {
-        width: 25%;
+        width: 18%;
         gap: 8px;
     }
 
     .right-container {
-        margin-left: 25%;
-        width: 75%;
+        margin-left: 18%;
+        width: 82%;
     }
 
     .nav {
-        width: 75%;
-        left: 25%;
+        width: 82%;
+        left: 18%;
         height: 70px;
     }
 
@@ -963,7 +989,7 @@ ul li.active {
     }
 
     .location p {
-        font-size: 16px !important;
+        font-size: 13px !important;
     }
 
     ul li span {
@@ -987,7 +1013,7 @@ ul li.active {
     }
 
     .top-content {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .announce {
@@ -999,13 +1025,9 @@ ul li.active {
         padding: 20px;
     }
 
-    .bottom-content {
-        flex-wrap: wrap;
-    }
-
     .messages,
     .courses {
-        width: 48%;
+        width: 100%;
     }
 
     .history {
@@ -1239,5 +1261,90 @@ ul li.active {
         width: 55px;
         height: 55px;
         font-size: 26px;
+    }
+}
+
+@media (max-width:425px) {
+    .left-container {
+        width: 10%;
+        align-items: center;
+    }
+
+    .profile{
+        display: none;
+    }
+
+    .menu li span {
+        display: none;
+    }
+
+    .menu li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sidebar-toggle {
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .right-container {
+        margin-left: 10%;
+        width: 90%;
+    }
+
+    .nav {
+        width: 90%;
+        left: 10%;
+    }
+
+    .content {
+        margin-top: 80px;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .top-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .announce {
+        width: 100%;
+    }
+
+    .calendar {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+
+    .messages,
+    .courses {
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 426px) and (max-width:728px) {
+    .left-container {
+        width: 12%;
+        align-items: center;
+    }
+
+    .location p{
+        font-size: 16px !important;
+    }
+
+    .right-container {
+        margin-left: 12%;
+        width: 88%;
+    }
+    
+    .messages,.courses{
+        width: 100%;
     }
 }
