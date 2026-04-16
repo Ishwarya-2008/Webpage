@@ -1332,6 +1332,10 @@ ul li.active {
         left: 10%;
     }
 
+    .nav .dashboard{
+        display: none;
+    }
+    
     .content {
         margin-top: 80px;
         padding: 20px;
