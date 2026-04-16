@@ -49,6 +49,9 @@ body {
     color: white;
     justify-content: center;
     padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .left-container.hidden .profile {
@@ -702,12 +705,16 @@ ul li.active {
     .left-container.hidden {
         width: 6%;
         padding-top: 20px;
+        position: fixed;
+        left: 0;
+        top: 0;
     }
-    
-    .left-container.hidden ul li img{
-        width:30px;
+
+    .left-container.hidden ul li img {
+        width: 30px;
         height: 30px;
     }
+
     .right-container {
         margin-left: 18%;
         width: 82%;
@@ -769,6 +776,9 @@ ul li.active {
     .left-container {
         width: 22%;
         gap: 10px;
+        position: fixed;
+        left: 0;
+        top: 0;
     }
 
     .right-container {
@@ -1091,6 +1101,9 @@ ul li.active {
 @media (min-width: 1920px) {
     .left-container {
         width: 16%;
+        position: fixed;
+        left: 0;
+        top: 0;
     }
 
     .right-container {
@@ -1149,6 +1162,9 @@ ul li.active {
 @media (min-width: 2560px) {
     .left-container {
         width: 14%;
+        position: fixed;
+        left: 0;
+        top: 0;
     }
 
     .right-container {
@@ -1278,9 +1294,12 @@ ul li.active {
     .left-container {
         width: 10%;
         align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
     }
 
-    .profile{
+    .profile {
         display: none;
     }
 
@@ -1336,16 +1355,19 @@ ul li.active {
     .courses {
         width: 100%;
     }
-    
+
 }
 
 @media (min-width: 426px) and (max-width:728px) {
     .left-container {
         width: 12%;
         align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
     }
 
-    .location p{
+    .location p {
         font-size: 16px !important;
     }
 
@@ -1353,8 +1375,9 @@ ul li.active {
         margin-left: 12%;
         width: 88%;
     }
-    
-    .messages,.courses{
+
+    .messages,
+    .courses {
         width: 100%;
     }
 }
