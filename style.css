@@ -40,7 +40,7 @@ body {
 }
 
 .left-container.hidden {
-    width: 5%;
+    width: 6%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -192,8 +192,8 @@ ul li.active {
 }
 
 .right-container.full-width {
-    margin-left: 5%;
-    width: 95%;
+    margin-left: 6%;
+    width: 94%;
 }
 
 .nav {
@@ -213,8 +213,8 @@ ul li.active {
 }
 
 .right-container.full-width .nav {
-    left: 5%;
-    width: 95%;
+    left: 6%;
+    width: 94%;
 }
 
 .dashboard {
