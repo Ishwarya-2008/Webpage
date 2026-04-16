@@ -423,6 +423,9 @@ ul li.active {
     flex-direction: column;
     position: relative;
     border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .msg-add-btn {
