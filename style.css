@@ -46,6 +46,7 @@ body {
     text-align: center;
     color: white;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .left-container.hidden .profile {
