@@ -58,7 +58,7 @@ body {
     display: none;
 }
 
-.left-container.hidden .menu ul li div{
+.left-container.hidden .menu ul li div {
     padding: 15px;
 }
 
@@ -72,6 +72,7 @@ body {
     gap: 15px;
     align-items: center;
 }
+
 .left-container.hidden .menu ul li {
     width: 100%;
     padding: 15px 20px;
@@ -82,11 +83,12 @@ body {
     display: none;
 }
 
-.left-container.hidden .menu ul li.active{
+.left-container.hidden .menu ul li.active {
     width: 100%;
     padding: 15px 20px;
     justify-content: center;
 }
+
 .left-container.hidden .settings {
     flex-wrap: wrap;
 }
@@ -157,6 +159,29 @@ body {
     height: 20px;
 }
 
+.name {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.address {
+    width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+p,
+h2,
+h3,
+h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .sidebar-toggle-1 {
     font-size: 25px;
     display: none;
@@ -166,7 +191,7 @@ body {
     cursor: pointer;
 }
 
-.sidebar-toggle-1{
+.sidebar-toggle-1 {
     cursor: pointer;
 }
 
@@ -205,18 +230,19 @@ body {
 }
 
 .status {
-    padding: 10px;
-}
-
-.status-btn {
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     background-color: transparent;
     border: 2px solid #fff;
     color: #fff;
     padding: 9px 30px;
     border-radius: 5px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 23px;
     font-size: 18px;
+    margin-top: 10px;
 }
 
 .menu {
@@ -241,6 +267,7 @@ ul li {
     font-size: 18px;
     cursor: pointer;
     border-left: 4px solid transparent;
+    text-align: left;
 }
 
 ul li i {
@@ -252,6 +279,13 @@ ul li i {
 ul li.active {
     background-color: #0288D1;
     border-left: 4px solid #FFC107;
+}
+
+span {
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .settings {
@@ -305,8 +339,12 @@ ul li.active {
     width: 94%;
 }
 
+.arrow {
+    width: 30px;
+}
+
 .dashboard {
-    width: 50%;
+    width: 320px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -315,6 +353,9 @@ ul li.active {
     padding: 20px;
     color: white;
     font-size: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .dashboard .fa-bars {
@@ -366,7 +407,15 @@ ul li.active {
     border-bottom: 1px solid #E0E0E0;
 }
 
+.head-box {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .roles {
+    width: 30%;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -374,13 +423,20 @@ ul li.active {
     flex-direction: row;
     color: #8C8C8C;
     font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .role-principal,
 .role-teacher {
+    width: 50%;
     position: relative;
     padding-left: 15px;
     font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .role-principal::before,
@@ -402,6 +458,7 @@ ul li.active {
 }
 
 .notice-1 {
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -439,11 +496,41 @@ ul li.active {
 
 
 .views {
+    width: 85px;
     display: flex;
     align-items: center;
     color: #8C8C8C;
     flex-direction: column;
     font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.views h3 {
+    color: #8C8C8C;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.details h2 {
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.details p {
+    color: #8c8c8c;
+    font-size: 22px;
+}
+
+.details {
+    width: calc(100% - 85px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .calendar {
@@ -466,6 +553,7 @@ ul li.active {
     top: -20px;
     right: 30px;
     cursor: pointer;
+    transform: scale(1.4);
 }
 
 .cal-grid {
@@ -473,6 +561,7 @@ ul li.active {
     border-collapse: separate;
     border-spacing: 10px;
     text-align: center;
+    table-layout: fixed;
 }
 
 .cal-grid th {
@@ -480,10 +569,16 @@ ul li.active {
     color: #888;
     font-size: 14px;
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .cal-grid td {
     padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .cal-grid td.today div {
@@ -550,15 +645,26 @@ ul li.active {
 }
 
 .heading {
+    width: 100%;
     padding: 15px 20px;
     display: flex;
-    gap: 5px;
     flex-direction: column;
     background-color: #03A9F5;
     color: white;
 }
 
+.heading h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.heading p {
+    font-size: 20px;
+    color: #b3e5fc;
+}
+
 .profile-1 {
+    width: 100%;
     display: flex;
     gap: 15px;
     flex-direction: row;
@@ -566,15 +672,22 @@ ul li.active {
     border-left: 5px solid #EE534E;
     padding: 15px 15px;
     border-bottom: 1px solid #eee;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .profile-2 {
+    width: 100%;
     display: flex;
     gap: 15px;
     flex-direction: row;
     align-items: center;
     padding: 15px 15px;
     border-bottom: 1px solid #eee;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .man-1 {
@@ -602,9 +715,11 @@ ul li.active {
 }
 
 .avatar-wrap {
+    width: 50px;
     position: relative;
     flex-shrink: 0;
 }
+
 
 .status-dot {
     width: 12px;
@@ -629,11 +744,13 @@ ul li.active {
     width: 37px;
     height: 39px;
     position: absolute;
-    top: 80px;
+    top: 75px;
     left: 400px;
+    transform: scale(1.4);
 }
 
 .teacher-1 {
+    width: 100%;
     display: flex;
     gap: 20px;
     flex-direction: row;
@@ -641,6 +758,30 @@ ul li.active {
     align-items: center;
     border-bottom: 1px solid #eee;
     line-height: 28px;
+}
+
+.message-content {
+    width: calc(100% - 50px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 26px;
+}
+
+.message-content h2 {
+    font-weight: 400;
+}
+
+.message-content p {
+    color: #8c8c8c;
+    font-size: 20px;
+}
+
+.courses-info {
+    width: calc(100% - 70px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .div1 {
@@ -668,9 +809,24 @@ ul li.active {
 }
 
 .process {
+    width: 70px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.courses-info p {
+    font-size: 20px;
+    color: #8c8c8c;
+}
+
+.courses-info h2 {
+    font-size: 25px;
+    font-weight: 400;
 }
 
 .history {
@@ -701,13 +857,13 @@ ul li.active {
     background-color: #ccc;
 }
 
-.topics > .topic-card,
-.topics > .topic-group {
+.topics>.topic-card,
+.topics>.topic-group {
     position: relative;
 }
 
-.topics > .topic-card::before,
-.topics > .topic-group::before {
+.topics>.topic-card::before,
+.topics>.topic-group::before {
     content: '';
     position: absolute;
     left: -18px;
@@ -719,19 +875,20 @@ ul li.active {
     z-index: 1;
 }
 
-.topics > :nth-child(1)::before {
+.topics> :nth-child(1)::before {
     background-color: #03A9F5;
 }
 
-.topics > :nth-child(2)::before {
+.topics> :nth-child(2)::before {
     background-color: #FFC107;
 }
 
-.topics > :nth-child(3)::before {
+.topics> :nth-child(3)::before {
     background-color: #24C5DB;
 }
 
 .topic-card {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -752,7 +909,7 @@ ul li.active {
 }
 
 .topic-date {
-    min-width: 50px;
+    width: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -763,18 +920,51 @@ ul li.active {
     flex-shrink: 0;
     height: 110px;
     justify-content: space-evenly;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .topic-date.blue-bg {
+    width: 65px;
     background-color: #03A9F5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .topic-date.yellow-bg {
+    width: 65px;
     background-color: #FFC107;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .topic-date.green-bg {
+    width: 65px;
     background-color: #24C5DB;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.topic-info {
+    width: calc(100% - 65px);
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.style {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 2px solid white;
+    padding: 15px;
 }
 
 @media (max-width: 1680px) {
@@ -1036,7 +1226,7 @@ ul li.active {
 
     .topic-date {
         font-size: 17px;
-        min-width: 45px;
+        width: 45px;
         height: 95px;
     }
 
@@ -1266,8 +1456,7 @@ ul li.active {
     }
 
     .topic-date {
-        min-width: 60px;
-        height: 120px;
+        width: 50px;
         font-size: 22px;
     }
 }
