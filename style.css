@@ -1614,13 +1614,13 @@ span {
     }
 
     .right-container.full-width {
-        margin-left: 115px;
-        width: calc(100% - 115px);
+        margin-left: 100px;
+        width: calc(100% - 100px);
     }
 
     .right-container.full-width .nav {
-        left: 115px;
-        width: calc(100% - 115px);
+        left: 100px;
+        width: calc(100% - 100px);
     }
 
     .left-container.hidden {
@@ -1691,6 +1691,16 @@ span {
     .messages,
     .courses {
         width: 100%;
+    }
+
+    .roles {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .roles div {
+        width: 100%;
+        align-items: flex-start;
     }
 
 }
