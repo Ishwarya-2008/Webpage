@@ -1606,7 +1606,7 @@ span {
 
 @media (max-width:425px) {
     .left-container {
-        width: 340px;
+        width: 130px;
         align-items: center;
         position: fixed;
         left: 0;
@@ -1650,13 +1650,13 @@ span {
     }
 
     .right-container {
-        margin-left: 340px;
-        width: calc(100% - 340px);
+        margin-left: 130px;
+        width: calc(100% - 130px);
     }
 
     .nav {
-        width: calc(100% - 340px);
-        left: 340px;
+        width: calc(100% - 130px);
+        left: 130px;
     }
 
     .nav .dashboard {
