@@ -745,8 +745,8 @@ span {
     width: 37px;
     height: 39px;
     position: absolute;
-    top: 73px;
-    left: 280px;
+    top: 14%;
+    left: 80%;
     transform: scale(1.4);
 }
 
@@ -853,7 +853,7 @@ span {
     position: absolute;
     left: 14px;
     top: 80px;
-    bottom: 60px;
+    bottom: 95px;
     width: 1.2px;
     background-color: #ccc;
 }
@@ -1252,7 +1252,7 @@ span {
         width: 40px;
         height: 40px;
         font-size: 18px;
-        top: 60px;
+        top: 64px;
         right: 40px;
     }
 
@@ -1261,6 +1261,10 @@ span {
         height: 40px;
         font-size: 18px;
         right: 50px;
+    }
+
+    .messages,.courses {
+        width: 100%;
     }
 }
 
@@ -1343,6 +1347,11 @@ span {
     .messages,
     .courses {
         width: 100%;
+    }
+
+    .topics::before{
+        top:70px;
+        bottom: 55px;
     }
 
     .history {
