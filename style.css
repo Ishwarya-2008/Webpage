@@ -610,7 +610,7 @@ span {
     width: 100%;
     display: flex;
     gap: 20px;
-    flex-direction: row;
+    flex-direction: row !important;
 }
 
 .messages,
@@ -625,6 +625,7 @@ span {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    position: relative;
 }
 
 .msg-add-btn {
@@ -681,7 +682,7 @@ span {
     width: 100%;
     display: flex;
     gap: 15px;
-    flex-direction: row;
+    flex-direction: row !important; 
     align-items: center;
     padding: 15px 15px;
     border-bottom: 1px solid #eee;
@@ -744,8 +745,8 @@ span {
     width: 37px;
     height: 39px;
     position: absolute;
-    top: 75px;
-    left: 400px;
+    top: 73px;
+    left: 280px;
     transform: scale(1.4);
 }
 
@@ -1035,7 +1036,7 @@ span {
     }
 
     .cal-grid {
-        border-spacing: 8px;
+        border-spacing: 2px;
     }
 
     .topic-info h4 {
@@ -1047,7 +1048,7 @@ span {
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
     .left-container {
         width: 340px;
         gap: 10px;
@@ -1182,6 +1183,7 @@ span {
 
     .bottom-content {
         gap: 15px;
+        flex-direction: column !important;
     }
 
     .heading h2 {
@@ -1326,7 +1328,7 @@ span {
     }
 
     .top-content {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .announce {
@@ -1682,6 +1684,7 @@ span {
     }
 
     .bottom-content {
+        width: 100%;
         flex-wrap: wrap;
     }
 
@@ -1694,20 +1697,30 @@ span {
 
 @media (min-width: 426px) and (max-width:728px) {
     .left-container {
-        width: 340px;
+        width: 315px;
+        min-width: 4px;
         align-items: center;
         position: fixed;
         left: 0;
         top: 0;
     }
 
+    .nav{
+        width: calc(100% - 315px);
+        left: 315px;
+    }
+
     .location p {
         font-size: 16px !important;
     }
 
+    .sidebar{
+        width: 340px;
+    }
+
     .right-container {
-        margin-left: 340px;
-        width: calc(100% - 340px);
+        margin-left: 315px;
+        width: calc(100% - 315px);
     }
 
     .right-container.full-width {
@@ -1719,9 +1732,47 @@ span {
         left: 115px;
         width: calc(100% - 115px);
     }
+    
+    .logo{
+        display: none;
+    }
 
     .messages,
     .courses {
         width: 100%;
+    }
+
+    .calendar {
+        display: none;
+    }
+
+    .roles{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .roles div {
+        width: 100%;
+    }
+
+    .notice-4{
+        padding: 20px;
+    }
+
+    .right-container.full-width .roles{
+        flex-wrap: nowrap;
+    }
+
+    .topics::before{
+        top:70px;
+        bottom: 55px;
+    }
+
+    .right-container.full-width .nav{
+        gap: 0px;
+    }
+
+    .right-container.full-width .sidebar{
+        width: 202px;
     }
 }
