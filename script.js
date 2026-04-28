@@ -19,3 +19,19 @@ sidebarToggle1.addEventListener('click', () => {
     sidebarToggle1.style.display = 'none';
     isSidebarHidden = false;
 });
+
+const todayDate = new Date().getDate();
+const calCells = document.querySelectorAll('.cal-grid tbody td');
+calCells.forEach(td => {
+    const div = td.querySelector('div');
+    const text = div ? div.textContent.trim() : td.textContent.trim();
+    if (text === String(todayDate)) {
+        td.classList.add('today');
+        if (!div) {
+            const newDiv = document.createElement('div');
+            newDiv.textContent = todayDate;
+            td.textContent = '';
+            td.appendChild(newDiv);
+        }
+    }
+});
